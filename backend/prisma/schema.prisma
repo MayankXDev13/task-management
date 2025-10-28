@@ -1,0 +1,95 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                   String    @id @default(uuid()) @map("user_id")
+  username             String    @unique
+  email                String    @unique
+  password             String
+  forgotPasswordToken  String?
+  forgotPasswordExpiry DateTime?
+
+  tasks       Task[] @relation("UserTasks")
+  createdTags Tag[]  @relation("UserTags")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("user")
+}
+
+model Task {
+  id          String    @id @default(uuid()) @map("task_id")
+  title       String
+  description String?
+  isCompleted Boolean   @default(false) @map("is_completed")
+  dueDate     DateTime?
+  priority    Priority  @default(Low)
+  status      Status    @default(Todo)
+
+  userId   String
+  user     User      @relation("UserTasks", fields: [userId], references: [id], onDelete: Cascade)
+  subtasks SubTask[]
+  taskTags TaskTag[] @relation("TaskToTags")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("task")
+}
+
+model SubTask {
+  id          String  @id @default(uuid()) @map("subtask_id")
+  title       String
+  isCompleted Boolean @default(false) @map("is_completed")
+
+  taskId String
+  task   Task   @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("subtask")
+}
+
+model Tag {
+  id   String @id @default(uuid()) @map("tag_id")
+  name String
+
+  userId   String
+  user     User      @relation("UserTags", fields: [userId], references: [id], onDelete: Cascade)
+  taskTags TaskTag[] @relation("TaskToTags")
+
+  @@unique([name, userId])
+  @@map("tag")
+}
+
+model TaskTag {
+  taskId String
+  tagId  String
+
+  task Task @relation("TaskToTags", fields: [taskId], references: [id], onDelete: Cascade)
+  tag  Tag  @relation("TaskToTags", fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([taskId, tagId])
+  @@map("task_tag")
+}
+
+enum Priority {
+  Low
+  Medium
+  High
+}
+
+enum Status {
+  Todo
+  InProgress
+  Complete
+}
