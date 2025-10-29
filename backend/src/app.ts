@@ -23,7 +23,9 @@ app.use(
 );
 
 import healthCheckRouter from "./routes/healthcheck.routes";
+import userRouter from "./routes/user.routes";
 
 app.use("/api/v1/task-manager/healthCheck", healthCheckRouter);
+app.use("/api/v1/task-manager/users", userRouter);
 
 export default app;

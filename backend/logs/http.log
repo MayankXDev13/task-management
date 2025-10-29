@@ -1,3 +1,56 @@
 [29 Oct, 2025 - 09:35:41:3541] [34minfo[39m: [34mHealth check passed[39m
 [29 Oct, 2025 - 09:35:41:3541] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 9.799 ms[39m
 [29 Oct, 2025 - 09:35:42:3542] [35mhttp[39m: [35m::1 GET /favicon.ico 404 - 3.544 ms[39m
+[29 Oct, 2025 - 10:30:56:3056] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users 404 - 3.840 ms[39m
+[29 Oct, 2025 - 10:31:18:3118] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 4.407 ms[39m
+[29 Oct, 2025 - 10:32:12:3212] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 1.087 ms[39m
+[29 Oct, 2025 - 10:41:09:419] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 10.181 ms[39m
+[29 Oct, 2025 - 10:42:39:4239] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 1.598 ms[39m
+[29 Oct, 2025 - 10:45:59:4559] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 20.323 ms[39m
+[29 Oct, 2025 - 10:46:02:462] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 1.741 ms[39m
+[29 Oct, 2025 - 10:46:03:463] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 1.624 ms[39m
+[29 Oct, 2025 - 10:46:04:464] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 1.291 ms[39m
+[29 Oct, 2025 - 10:46:06:466] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 400 - 1.201 ms[39m
+[29 Oct, 2025 - 10:49:04:494] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 201 - 21758.145 ms[39m
+[29 Oct, 2025 - 10:49:21:4921] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 5656.226 ms[39m
+[29 Oct, 2025 - 12:02:27:227] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 17729.537 ms[39m
+[29 Oct, 2025 - 12:03:08:38] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 201 - 8215.190 ms[39m
+[29 Oct, 2025 - 16:28:21:2821] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 201 - 11607.132 ms[39m
+[29 Oct, 2025 - 16:29:11:2911] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:11:2911] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 1.900 ms[39m
+[29 Oct, 2025 - 16:29:14:2914] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:14:2914] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 1.376 ms[39m
+[29 Oct, 2025 - 16:29:15:2915] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:15:2915] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 1.044 ms[39m
+[29 Oct, 2025 - 16:29:16:2916] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:16:2916] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.853 ms[39m
+[29 Oct, 2025 - 16:29:17:2917] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:17:2917] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.927 ms[39m
+[29 Oct, 2025 - 16:29:18:2918] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:18:2918] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.981 ms[39m
+[29 Oct, 2025 - 16:29:18:2918] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:18:2918] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.614 ms[39m
+[29 Oct, 2025 - 16:29:19:2919] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:19:2919] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.916 ms[39m
+[29 Oct, 2025 - 16:29:20:2920] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:20:2920] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.769 ms[39m
+[29 Oct, 2025 - 16:29:20:2920] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:20:2920] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.860 ms[39m
+[29 Oct, 2025 - 16:29:21:2921] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:21:2921] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.998 ms[39m
+[29 Oct, 2025 - 16:29:22:2922] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:22:2922] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.694 ms[39m
+[29 Oct, 2025 - 16:29:23:2923] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:23:2923] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 0.896 ms[39m
+[29 Oct, 2025 - 16:29:25:2925] [34minfo[39m: [34mHealth check passed[39m
+[29 Oct, 2025 - 16:29:25:2925] [35mhttp[39m: [35m::1 GET /api/v1/task-manager/healthCheck 200 - 1.038 ms[39m
+[29 Oct, 2025 - 16:29:42:2942] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 7158.594 ms[39m
+[29 Oct, 2025 - 16:29:44:2944] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 148.116 ms[39m
+[29 Oct, 2025 - 16:29:46:2946] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 190.278 ms[39m
+[29 Oct, 2025 - 16:29:47:2947] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 267.777 ms[39m
+[29 Oct, 2025 - 16:29:48:2948] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 440.426 ms[39m
+[29 Oct, 2025 - 16:29:49:2949] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register - - - ms[39m
+[29 Oct, 2025 - 16:29:51:2951] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 174.992 ms[39m
+[29 Oct, 2025 - 16:29:52:2952] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 168.032 ms[39m
+[29 Oct, 2025 - 16:29:53:2953] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/register 409 - 175.154 ms[39m
+[29 Oct, 2025 - 16:30:22:3022] [35mhttp[39m: [35m::1 POST /api/v1/task-manager/users/login 200 - 8153.643 ms[39m
