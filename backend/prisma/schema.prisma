@@ -28,13 +28,11 @@ model User {
 }
 
 model Task {
-  id          String    @id @default(uuid()) @map("task_id")
+  id          String   @id @default(uuid()) @map("task_id")
   title       String
   description String?
-  isCompleted Boolean   @default(false) @map("is_completed")
-  dueDate     DateTime?
-  priority    Priority  @default(Low)
-  status      Status    @default(Todo)
+  isCompleted Boolean  @default(false) @map("is_completed")
+  priority    Priority @default(Low)
 
   userId   String
   user     User      @relation("UserTasks", fields: [userId], references: [id], onDelete: Cascade)
